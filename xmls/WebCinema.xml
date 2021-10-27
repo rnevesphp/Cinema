@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cinema>
+   <cinemaFilial1 id="cine1">
+      <sala1Cinema1 id="Sala1">
+         <asientosOcupados>
+            <seat id="1" numReservaUsuario="001"/>
+            <seat id="2" numReservaUsuario="002"/>
+            <seat id="3" numReservaUsuario="003"/>
+            <seat id="4" numReservaUsuario="004"/>
+         </asientosOcupados>
+         <asientosDisponibles>
+            <seat id="1"/>
+            <seat id="2"/>
+            <seat id="3"/>
+            <seat id="4"/>
+         </asientosDisponibles>
+         <sesionesDisponibles>
+            <sesion id="1"/>
+            <sesion id="2"/>
+            <sesion id="3"/>
+         </sesionesDisponibles>
+         <pelicula>
+            <peliculaName>El francotirador</peliculaName>
+            <idPelicula>EF</idPelicula>
+            <calificacionPelicula>7.8</calificacionPelicula>
+            <FilmLanguage>V.O</FilmLanguage>
+         </pelicula>
+      </sala1Cinema1>
+
+      <sala2Cinema1 id="Sala2">
+         <asientosOcupados>
+            <seat id="51" numReservaUsuario="110"/>
+            <seat id="43" numReservaUsuario="098"/>
+            <seat id="28" numReservaUsuario="115"/>
+            <seat id="16" numReservaUsuario="004"/>
+         </asientosOcupados>
+         <asientosDisponibles>
+            <seat id="15"/>
+            <seat id="29"/>
+            <seat id="44"/>
+            <seat id="52"/>
+         </asientosDisponibles>
+         <sesionesDisponibles>
+            <sesion id="1"/>
+            <sesion id="2"/>
+            <sesion id="3"/>
+         </sesionesDisponibles>
+         <pelicula>
+            <peliculaName>Venom</peliculaName>
+            <idPelicula>VNM</idPelicula>
+            <calificacionPelicula>9.5</calificacionPelicula>
+            <FilmLanguage>Spanish</FilmLanguage>
+         </pelicula>
+      </sala2Cinema1>
+   </cinemaFilial1>
+
+   <usersCinema>
+      <usuario001>
+         <nameUser>Fulano</nameUser>
+         <tlfUser>123 456 789</tlfUser>
+         <emailUsuario>fulano@gmail.com</emailUsuario>
+         <userRegistred>Fulano123</userRegistred>
+         <userPassword>fulano123456</userPassword>
+         <UserType>Platinum</UserType>
+         <userTicket>
+            <entradaReservada>004</entradaReservada>
+            <salaReservada>Sala2Cinema1</salaReservada>
+            <asientoReservadoId>16</asientoReservadoId>
+         </userTicket>
+      </usuario001>
+   </usersCinema>
+   
+
+</cinema>

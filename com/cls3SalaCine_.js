@@ -25,7 +25,6 @@ class clsSalaCine {
          var cAsientos = new clsAsientos(i); // creamos una nueva clase para los asientos y le añadimos a la variable 
          // cAsientos
          this.Seats.push(cAsientos); // introducimos dentro del array el valor de la nueva clase 
-
          //con la variable cAsientos 
       }
    }

@@ -2,7 +2,7 @@ class clsAsientos {
    constructor(NumAsiento) {
       this._numAs = NumAsiento;
       this._asientoOcu = Math.round(Math.random()); // ocupación del asiento en la sala
-      this.cellHTML;
+      this.celdaHTML;
       
       this._Inicio();
    }
@@ -50,7 +50,6 @@ class clsAsientos {
    }
 
    ReservarAsiento() {
-      
       this._asientoOcu = 1;
       this.cellHTML.removeEventListener("click", null, null);
       this.Draw();
