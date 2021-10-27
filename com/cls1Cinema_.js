@@ -3,7 +3,7 @@ class clsCinemaCompany {
       this.Cine; // creamos la variable cine
       this.CreateCine(); // llamamos la función que hemos creado
    }
-   
+
    CreateCine() {
       this.Cine = new clsCine();
       // Atribuimos a la variable Cine la creación de la clase Cine

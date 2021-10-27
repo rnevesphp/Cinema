@@ -12,6 +12,6 @@ class clsCine {
    }
 
    drawSalas() {
-      this.salaCine1.drawAsientos(); // preguntar al profe // 
+      this.salaCine1.DrawSala(); // preguntar al profe // 
    }
 }

@@ -6,6 +6,9 @@ class clsSalaCine {
       this.Asientos = []; // Array para almacenar los asientos de cada sala
       this.container = document.getElementById("grid_sala"); // cogemos el container del doc HTML 
       this.CreateAsientos(); // Llamamos el metodo que que crea los asientos
+
+      this.DrawSala(); 
+      this.celdaSala; 
    }
 
    CreateAsientos() {
@@ -18,6 +21,14 @@ class clsSalaCine {
       this.Asientos.push(cAsientos); // introducimos dentro del array el valor de la nueva clase 
 
       //con la variable cAsientos 
+   }
+
+   DrawSala() { 
+      this.celdaSala = document.getElementById("div"); 
+      this.celdaSala.innerHTML = "Sala1" + this.numSalaID; 
+      this.celdaSala.className = "cell_sala"; 
+      this.celdaSala.addEventListener("click", this.onclick.bind(this) ); 
+      this.celdaSala.id = "Sala1" + this.numSalaID; 
    }
 
    drawAsientos() {
