@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* { 
+  font-family: "Josefin Sans";
+}
+/* (A) 3 COLUMNS PER ROW */
+#grid {
+  display: grid;
+  grid-template-columns: auto auto auto; 
+  grid-gap: 10px;
+}
+/* (B) 1 COL ON SMALL SCREENS */
+@media screen and (max-width:768px) {
+  #grid { grid-template-columns: auto; }
+}
+
+/* (C) OPTIONAL FOR THE CELLS */
+.head, .cell, .cell_red {  padding: 10px; }
+.head {
+  font-weight: bold;
+  border: 1px solid #f18e8e;
+  background: #ffbfbf;
+}
+
+.cell {
+  border: 1px solid #c2ba3c;
+  background: #f8ffde;
+}
+.cell_red {
+  border: 1px solid #c2ba3c;
+  background: #ea722c;
+}
+
+.cell_miasiento { 
+  border-radius: 5px;
+  border-style: dotted;
+  color: #62e635 ; 
+  border-color: #ea722c;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
