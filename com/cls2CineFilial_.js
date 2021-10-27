@@ -8,7 +8,7 @@ class clsCine {
 
    createSalas() {
       this.salaCine1 = new clsSalaCine("1", 23); // atribuimos la creación de las salas a las
-      this.salaCine2 = new clsSalaCine("2", 25); // variables salaCine1 y salaCine 2
+      this.salaCine2 = new clsSalaCine("2", 25); // variables salaCine1 y salaCine2
    }
 
    drawSalas() {

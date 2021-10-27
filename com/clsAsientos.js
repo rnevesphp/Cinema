@@ -11,7 +11,7 @@ class clsAsientos {
       this._CrearCell();
    }
    _CrearCell() {
-      this.cellHTML = document.createElement("div") // creación de la s divs en el documento HTML 
+      this.cellHTML = document.createElement("div"); // creación de la s divs en el documento HTML 
       this.cellHTML.innerHTML = "Asiento :" + this._numAs;
       this.cellHTML.addEventListener("click", this.onclick.bind(this));
       this.cellHTML.id = "a" + this._numAs;
@@ -28,7 +28,7 @@ class clsAsientos {
    }
    _getClassNombre() {
       var tClass = "";
-      if (this.AsOcupado()) {
+      if (this._asientoOcu()) {
          tClass = "cell_red";
       } else {
          tClass = "cell";

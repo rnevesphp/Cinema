@@ -9,7 +9,8 @@ class clsSalaCine {
    }
 
    CreateAsientos() {
-      for (var i = 0; i < this.numAsientosXSala; i++) // para la variable i q sea menor que el numero 
+      for (var i = 0; i < this.numAsientosXSala; i++) 
+         // para la variable i que es menor que el numero 
          // de asientos por sala entonces se incrementará hasta que tenga los mismos valores
          var cAsientos = new clsAsientos(i); // creamos una nueva clase para los asientos y le añadimos a la variable 
       // cAsientos
@@ -17,16 +18,16 @@ class clsSalaCine {
       //con la variable cAsientos 
    }
 
-   DrawAsientos() {
+   drawAsientos() {
       for (var i = 0; this.numAsientosXSala; i++) {
-         cAsientos = this.Asientos[i];
+         var cAsientos = this.Asientos[i];
          var tCell = cAsientos.Draw();
          this.container.appendChild(tCell);
       }
    }
 
    EraseAsientos() {
-      this.container.innerHTML = " "
+      this.container.innerHTML = ""
    }
 
 
