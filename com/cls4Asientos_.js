@@ -1,48 +1,58 @@
 class clsAsientos {
    constructor(NumAsiento) {
       this._numAs = NumAsiento;
-      this._asientoOcu = 0; // ocupación del asiento en la sala
+      this._asientoOcu = Math.round(Math.random()); // ocupación del asiento en la sala
       this.cellHTML;
-      this.x;
-      this.y;
-      this._Initialize();
+      
+      this._Inicio();
    }
-   _Initialize() {
+
+   _Inicio() {
       this._CrearCell();
    }
    _CrearCell() {
-      this.cellHTML = document.createElement("div") // creación de la s divs en el documento HTML 
-      this.cellHTML.innerHTML = "Asiento :" + this._numAs;
-      this.cellHTML.addEventListener("click", this.onclick.bind(this));
-      this.cellHTML.id = "a" + this._numAs;
+      this.celdaHTML = document.createElement("div") // creación de la s divs en el documento HTML 
+      this.celdaHTML.innerHTML = "Asiento :" + this._numAs;
+      this.celdaHTML.addEventListener("click", this.onclick.bind(this));
+      this.celdaHTML.id = "a" + this._numAs;
    }
-   ReservarAsiento() {
-      console.log("Reservar Asiento");
-      this._asientoOcu = 1;
-      this.cellHTML.removeEventListener("click", null, null);
-      this.Draw();
-   }
+ 
+
    Draw() {
-      this.cellHTML.className = this._getClassNombre();
-      return this.cellHTML;
+      this.celdaHTML.className = this._getClassColor();
+      return this.celdaHTML;
    }
-   _getClassNombre() {
+
+   _getClassColor() {
       var tClass = "";
-      if (this.AsOcupado()) {
+      if (this._numAs == asiento) { // asiento
          tClass = "cell_red";
       } else {
          tClass = "cell";
       }
-      if (localStorage.getItem("user_numero") == this._numAs) {
+      /*if (localStorage.getItem("user_numero") == this._numAs) {
          tClass = "cell_read_myseat";
-      };
+      };*/
       return tClass;
    }
-   onclick() {
-      console.log("Test click -> " + this.cellHTML.id);
-      this.ReservarAsiento();
-   }
+
    AsOcupado() {
       return (this._asientoOcu > 0);
+   }
+
+   onclick() {
+      if (this._asientoOcu) {
+         window.alert("El asiento está reservado!"); 
+      } else {
+         console.log("Butaca reservada num" + " " + this.celdaHTML.id);
+         this.ReservarAsiento();
+      }
+   }
+
+   ReservarAsiento() {
+      
+      this._asientoOcu = 1;
+      this.cellHTML.removeEventListener("click", null, null);
+      this.Draw();
    }
 }

@@ -1,6 +1,6 @@
 class clsCinemaCompany {
    constructor() {
-      this.Cine; // creamos la variable cine
+      this.cine; // creamos la variable cine
       this.CreateCine(); // llamamos la función que hemos creado
    }
 
@@ -8,6 +8,7 @@ class clsCinemaCompany {
       this.Cine = new clsCine();
       // Atribuimos a la variable Cine la creación de la clase Cine
    }
+   /*
    __CreateFrontEnd() {
       // Array con todos los elementos del frontEnd
       var d_Array = [
@@ -26,5 +27,5 @@ class clsCinemaCompany {
             container.appendChild(cell)
          }
       }
-   }
+   }*/
 }
