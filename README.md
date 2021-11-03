@@ -25,4 +25,5 @@ Once installed run the <strong><em>Apache Server</em></strong><br>
 Search for `Localhost/path_of_your_folder`
 
 In my case I used the next path: <br>
-![Path of folder](https://user-images.githubusercontent.com/51343870/140004804-e05253bc-bc6d-4f82-9b0b-3d6b17ddea5e.png)
+![Path](https://user-images.githubusercontent.com/51343870/140007092-3ae05ec9-197d-4afb-a1c3-16eae8af786a.png)
+
