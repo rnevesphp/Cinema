@@ -12,6 +12,7 @@ class cls2CineFilial_ {
       this.salacine3 = new cls3SalaCine_(3, 7);
       this.salacine4 = new cls3SalaCine_(4, 12);
       this.salacine5 = new cls3SalaCine_(5, 17);
+      this.salacine6 = new cls3SalaCine_(6, 14);
    }
 
    DrawAllSalas() {
@@ -20,5 +21,6 @@ class cls2CineFilial_ {
       this.salacine3.DrawUniqueSala();
       this.salacine4.DrawUniqueSala();
       this.salacine5.DrawUniqueSala();
+      this.salacine6.DrawUniqueSala();
    }
 }
