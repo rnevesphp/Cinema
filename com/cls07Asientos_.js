@@ -1,4 +1,4 @@
-class cls4Asientos_ {
+class cls07Asientos_ {
    constructor(NumAsiento) {
       this._numAs = NumAsiento;
       this._asientoOcu = 0; //Math.round(Math.random()); // ocupación del asiento en la sala
@@ -15,7 +15,7 @@ class cls4Asientos_ {
       this.celdaHTML = document.createElement("div") // creación de la s divs en el documento HTML 
       this.celdaHTML.innerHTML = "Asiento: " + this._numAs;
       this.celdaHTML.addEventListener("click", this.onclick.bind(this));
-      this.celdaHTML.id = "a" + this._numAs;
+      this.celdaHTML.id = "A-" + this._numAs;
    }
    //////////////////////////////////////////////////////
    ReservarAsiento() {
@@ -39,7 +39,7 @@ class cls4Asientos_ {
       }
 
       if (localStorage.getItem(this._numAs) == 1) {
-         tClass = "cell_red_myseat";
+         tClass += " cell_red_myseat";
       }
       return tClass;
    }
@@ -54,7 +54,7 @@ class cls4Asientos_ {
          window.alert("El asiento está reservado!");
       }
       else {
-         console.log("Butaca reservada num" + " " + this.celdaHTML.id);
+         alert("Acabas de seleccionar el asiento " + " " + this.celdaHTML.id);
          this.ReservarAsiento();
       }
    }

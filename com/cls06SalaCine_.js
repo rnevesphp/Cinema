@@ -1,4 +1,4 @@
-class cls3SalaCine_ {
+class cls06SalaCine_ {
    constructor(numSalaID, numAsientosSala) {
       this.numSalaID = numSalaID; // ID de la sala creado en la clase CineFilial
       this.numAsientosSala = numAsientosSala; // Numero de asientos por sala en la clase CineFilial
@@ -14,7 +14,7 @@ class cls3SalaCine_ {
    CreateAsientos() {
       for (var i = 0; i < this.numAsientosSala; i++) { // para la  variable i que es menor que el numero 
          // de asientos por sala entonces se incrementará hasta que tenga los mismos valores
-         var cAsientos = new cls4Asientos_(i); // creamos una nueva clase para los asientos y le añadimos a la variable 
+         var cAsientos = new cls07Asientos_(i); // creamos una nueva clase para los asientos y le añadimos a la variable 
          // cAsientos
          this.Seats.push(cAsientos); // introducimos dentro del array el valor de la nueva clase 
          //con la variable cAsientos 

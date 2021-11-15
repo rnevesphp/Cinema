@@ -15,7 +15,7 @@ d.openurl("https://www.w3schools.com");
 
 window.onload = function () {
    if (document.readyState == "complete") {
-      mG = new cls1Cinema_();
+      mG = new cls01Cinema_();
       //alert(miasiento);
    }
 }

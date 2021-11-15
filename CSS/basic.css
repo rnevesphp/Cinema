@@ -45,12 +45,17 @@ h1 {
   cursor: pointer;
 }
 
-/*.cell_red {
-  border: 1px solid #c2ba3c;
-  background: #ea722c;
-  text-align: center;
+.cell_red {
+  border: 1px solid ; 
+  background: linear-gradient(90deg, #da0505 0%, #f10606 100%);
+  width: 200px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
   cursor: pointer;
-}*/
+}
 
 .cell_red_myseat { 
   border: 1px solid ; 
@@ -65,6 +70,18 @@ h1 {
 }
 
 .cell_sala { 
+  border: 1px solid;
+  background: #00DF5E;
+  width: 150px;
+  margin-top: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.celdaPelicula {
   border: 1px solid;
   background: #00DF5E;
   width: 150px;

@@ -1,4 +1,4 @@
-class cls2CineFilial_ {
+class cls05CineFilial_ {
    constructor() {
       this.salacine1; // creamos las variables que alamcenarán las salas 
       this.salacine2;
@@ -7,12 +7,12 @@ class cls2CineFilial_ {
    }
 
    createSalas() {
-      this.salacine1 = new cls3SalaCine_(1, 15); // atribuimos la creación de las salas a las
-      this.salacine2 = new cls3SalaCine_(2, 10); // variables salaCine1 y salaCine2
-      this.salacine3 = new cls3SalaCine_(3, 7);
-      this.salacine4 = new cls3SalaCine_(4, 12);
-      this.salacine5 = new cls3SalaCine_(5, 17);
-      this.salacine6 = new cls3SalaCine_(6, 14);
+      this.salacine1 = new cls06SalaCine_(1, 15); // atribuimos la creación de las salas a las
+      this.salacine2 = new cls06SalaCine_(2, 10); // variables salaCine1 y salaCine2
+      this.salacine3 = new cls06SalaCine_(3, 7);
+      this.salacine4 = new cls06SalaCine_(4, 12);
+      this.salacine5 = new cls06SalaCine_(5, 17);
+      this.salacine6 = new cls06SalaCine_(6, 14);
    }
 
    DrawAllSalas() {
