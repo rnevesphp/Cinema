@@ -19,17 +19,21 @@ class cls02Catalogo_ {
       this.pelicula4 = new cls03Pelis_("Avengers", 4);
       this.pelicula5 = new cls03Pelis_("Iron Man", 5);
       this.pelicula6 = new cls03Pelis_("Hulk", 6);
+      this.pelicula7 = new cls03Pelis_("Shrek", 7);
 
    }
 
    pintarPelis() {
-      // el metodo 
+      // el metodo pintarPelis coge las variables creadas en el metodo createPelis
+      // y llama el metodo pintarPelis de la clase cls03Pelis_(); que lo que hace es añadirlas 
+      // al container HTML
       this.pelicula1.pintarPelis();
       this.pelicula2.pintarPelis();
       this.pelicula3.pintarPelis();
       this.pelicula4.pintarPelis();
       this.pelicula5.pintarPelis();
       this.pelicula6.pintarPelis();
+      this.pelicula7.pintarPelis();
    }
 
 }

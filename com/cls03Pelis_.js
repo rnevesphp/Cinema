@@ -24,15 +24,22 @@ class cls03Pelis_ {
    }
 
    onclick() {
-      this.pintarSesiones();
       this.borrarPelis();
+      this.createSesiones();
+
    }
 
-   pintarSesiones() {
+   createSesiones() {
       this.Sesion1 = new cls04Sesiones_(1);
+      this.Sesion2 = new cls04Sesiones_(2)
    }
 
    borrarPelis() {
-      this.containerHTMLPelis.innerHTML = " ";
+      this.containerHTMLPelis.innerHTML = "";
+   }
+
+   pintarSesiones() {
+      this.Sesion1.pintarSesiones();
+      this.Sesion2.pintarSesiones()
    }
 }

@@ -71,7 +71,7 @@ h1 {
 
 .cell_sala { 
   border: 1px solid;
-  background: #00DF5E;
+  background: yellow;
   width: 150px;
   margin-top: 10px;
   margin-top: 10px;
@@ -81,9 +81,25 @@ h1 {
   cursor: pointer;
 }
 
+.cell_sala:hover { 
+  border: 1px solid;
+  background: rgb(27, 235, 27);
+  width: 150px;
+  margin-top: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+
+
+
 .celdaPelicula {
   border: 1px solid;
-  background: blue;
+  background: yellow;
   width: 150px;
   height: 200px;
   margin-top: 10px;
@@ -99,22 +115,41 @@ h1 {
 }
 
 .celdaPelicula:hover {
-  width: 155px;
-  height: 205px;
+  background: rgb(27, 235, 27);
   align-items: center;
   justify-content: center;
   box-shadow: 0px 2px 8px 0px #eee;
 }
 
 .celdaSesion {
-  border: 1px solid;
+  border: 1px solid white;
   background: yellow;
   width: 150px;
-  height: 190px;
+  height: 2rem;
   margin-top: 10px;
   margin-top: 10px;
   padding: 10px;
   border-radius: 15px;
   text-align: center;
   cursor: pointer;
+  display: flex;
+ justify-content: center;
+  align-items: center;
+}
+
+.celdaSesion:hover { 
+  border: 1px solid white;
+  background: rgb(27, 235, 27);
+  width: 150px;
+  height: 2.2rem;
+  margin-top: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+ justify-content: center;
+  align-items: center;
+
 }
