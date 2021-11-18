@@ -16,7 +16,7 @@ class cls05CineFilial_ {
    }
 
    DrawAllSalas() {
-      this.salacine1.DrawUniqueSala();
+      this.salacine1.DrawUniqueSala(); // llamamos el metodo que nos dibujará los elementos 
       this.salacine2.DrawUniqueSala();
       this.salacine3.DrawUniqueSala();
       this.salacine4.DrawUniqueSala();

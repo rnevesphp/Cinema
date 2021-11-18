@@ -1,52 +1,38 @@
 class cls03Pelis_ {
-   constructor(nombrePeli, cantSesiones) {
-      this.nombrePeli = nombrePeli;
-      this.cantDeSesiones = cantSesiones;
+   constructor(NombrePelicula, peliculaID) {
+      this.NombrePelicula = NombrePelicula;
+      this.peliculaID = peliculaID;
 
-      this.numOfSessions = [];
-      this.containerPelis = document.getElementById("grid_sala");
+      //this.arrayPelis = [];
 
-      this.CreateSesiones();
+      this.containerHTMLPelis = document.getElementById("grid_sala");
 
-      this.CreateCeldaPeli();
-      this.celdaPeli;
+      this.createCeldaPelicula();
+      this.celdaPelicula;
    }
 
-
-   CreateSesiones() {
-      for (var s = 0; s < this.cantDeSesiones; s++) {
-         var nSesiones = new cls04Sesiones_(s);
-         this.numOfSessions.push(nSesiones);
-      }
+   createCeldaPelicula() {
+      this.celdaPelicula = document.createElement("div");
+      this.celdaPelicula.innerHTML = "Nombre: " + this.NombrePelicula;
+      this.celdaPelicula.className = "celdaPelicula";
+      this.celdaPelicula.addEventListener("click", this.onclick.bind(this));
+      this.celdaPelicula.id = "ID: " + this.peliculaID;
    }
 
-   CreateCeldaPeli() {
-      this.celdaPeli = document.createElement("div");
-      this.celdaPeli.innerHTML = "Hola: " + this.cantDeSesiones;
-      this.celdaPeli.className = "celdaPelicula";
-      this.celdaPeli.addEventListener("click", this.onclick2.bind(this));
-      this.celdaPeli.name = "Nombre: " + this.nombrePeli;
+   pintarPelis() {
+      this.containerHTMLPelis.appendChild(this.celdaPelicula);
    }
 
-   DrawUniquePeli() {
-      this.containerPelis.appendChild(this.celdaPeli);
+   onclick() {
+      this.pintarSesiones();
+      this.borrarPelis();
    }
 
-   onclick2() {
-      this.EraseSesiones();
-      this.DrawSesiones();
+   pintarSesiones() {
+      this.Sesion1 = new cls04Sesiones_(1);
    }
 
-   DrawSesiones() {
-      for (var section = 0; section < this.cantDeSesiones; section++) {
-         var nSesiones = numOfSessions[section];
-         var tSesion = nSesiones.Dibuja();
-         this.containerPelis.appendChild(tSesion);
-      }
+   borrarPelis() {
+      this.containerHTMLPelis.innerHTML = " ";
    }
-
-   EraseSesiones() {
-      this.containerPelis.innerHTML = " ";
-   }
-
 }

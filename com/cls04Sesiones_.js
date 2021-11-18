@@ -1,23 +1,31 @@
 class cls04Sesiones_ {
-   constructor(numDeSesiones) {
-      this._NumDeSesiones = numDeSesiones;
-      this.CeldaHTMLSes;
+   constructor(NumDeSesion) {
+      this.numDeSesion = NumDeSesion;
 
-      this._Start();
+      this.containerSesiones = document.getElementById("grid_sala");
+
+      this.createCeldaSesion();
+      this.celdaSesion;
    }
 
-   _Start() {
-      this._crearCeldaSes();
+   createCeldaSesion() {
+      this.celdaSesion = document.createElement("div");
+      this.celdaSesion.innerHTML = "Sesion " + this.numDeSesion;
+      this.celdaSesion.className = "celdaSesion";
+      this.celdaSesion.addEventListener("click", this.onclick.bind(this));
    }
 
-   _crearCeldaSes() {
-      this.CeldaHTMLSes = document.createElement("div");
-      this.CeldaHTMLSes.innerHTML = "Sesion: " + this._NumDeSesiones;
-      this.CeldaHTMLSes.addEventListener("click", this.onclick.bind(this));
-      this.CeldaHTMLSes.id = "S" + this._NumDeSesiones;
+   pintarSesiones() {
+      this.containerSesiones.appendChild(this.celdaSesion);
    }
 
-   Dibuja() {
-      return this.CeldaHTMLSes;
+   onclick() {
+      this.pintarSesiones();
+      this.borrarSesion();
    }
+
+   borrarSesion() {
+      this.containerSesiones.innerHTML = " ";
+   }
+
 }
