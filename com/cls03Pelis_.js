@@ -3,8 +3,6 @@ class cls03Pelis_ {
       this.NombrePelicula = NombrePelicula;
       this.peliculaID = peliculaID;
 
-      //this.arrayPelis = [];
-
       this.containerHTMLPelis = document.getElementById("grid_sala");
 
       this.createCeldaPelicula();
@@ -26,12 +24,12 @@ class cls03Pelis_ {
    onclick() {
       this.borrarPelis();
       this.createSesiones();
-
    }
 
    createSesiones() {
       this.Sesion1 = new cls04Sesiones_(1);
-      this.Sesion2 = new cls04Sesiones_(2)
+      this.Sesion2 = new cls04Sesiones_(2);
+      this.Sesion3 = new cls04Sesiones_(3);
    }
 
    borrarPelis() {
@@ -40,6 +38,7 @@ class cls03Pelis_ {
 
    pintarSesiones() {
       this.Sesion1.pintarSesiones();
-      this.Sesion2.pintarSesiones()
+      this.Sesion2.pintarSesiones();
+      this.Sesion3.pintarSesiones();
    }
 }

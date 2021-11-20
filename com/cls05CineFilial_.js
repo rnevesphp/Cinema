@@ -1,14 +1,14 @@
 class cls05CineFilial_ {
    constructor() {
-      this.salacine1; // creamos las variables que alamcenarán las salas 
+      this.salacine1;
       this.salacine2;
-      this.createSalas(); // Invocamos los metodos construidos para crear las salas 
-      this.DrawAllSalas(); // y tambien el metodo que dibujaría las salas. 
+      this.createSalas();
+      this.DrawAllSalas();
    }
 
    createSalas() {
-      this.salacine1 = new cls06SalaCine_(1, 15); // atribuimos la creación de las salas a las
-      this.salacine2 = new cls06SalaCine_(2, 10); // variables salaCine1 y salaCine2
+      this.salacine1 = new cls06SalaCine_(1, 15);
+      this.salacine2 = new cls06SalaCine_(2, 10);
       this.salacine3 = new cls06SalaCine_(3, 7);
       this.salacine4 = new cls06SalaCine_(4, 12);
       this.salacine5 = new cls06SalaCine_(5, 17);

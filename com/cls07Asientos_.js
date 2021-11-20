@@ -37,7 +37,6 @@ class cls07Asientos_ {
       } else {
          tClass = "cell";
       }
-
       if (localStorage.getItem(this._numAs) == 1) {
          tClass += " cell_red_myseat";
       }
@@ -58,6 +57,5 @@ class cls07Asientos_ {
          this.ReservarAsiento();
       }
    }
-
 }
 
