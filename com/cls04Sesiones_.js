@@ -16,7 +16,6 @@ class cls04Sesiones_ {
       this.containerSesiones.appendChild(this.celdaSesion);
    }
    onclick() {
-      this.pintarSesiones();
       this.borrarSesiones();
       this.createCineFilial();
    }
