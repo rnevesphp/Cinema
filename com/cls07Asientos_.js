@@ -4,35 +4,27 @@ class cls07Asientos_ {
       this._asientoOcu = 0; //Math.round(Math.random()); // ocupación del asiento en la sala
       this.celdaHTML;
 
-      this._Inicio();
-   }
-   //////////////////////////////////////////////////////
-   _Inicio() {
       this._CrearCell();
    }
-   //////////////////////////////////////////////////////
    _CrearCell() {
       this.celdaHTML = document.createElement("div") // creación de la s divs en el documento HTML 
       this.celdaHTML.innerHTML = "Asiento: " + this._numAs;
       this.celdaHTML.addEventListener("click", this.onclick.bind(this));
       this.celdaHTML.id = "A-" + this._numAs;
    }
-   //////////////////////////////////////////////////////
    ReservarAsiento() {
       console.log("Asiento escogido");
       this._asientoOcu = 1;
       this.celdaHTML.removeEventListener("click", null, null);
       this.Draw();
    }
-   //////////////////////////////////////////////////////
    Draw() {
       this.celdaHTML.className = this._getClassColor();
       return this.celdaHTML;
    }
-
    _getClassColor() {
       var tClass = "";
-      if (this.AsOcupado()) { // asiento
+      if (this.AsOcupado()) {
          tClass = "cell_red";
       } else {
          tClass = "cell";
@@ -42,11 +34,9 @@ class cls07Asientos_ {
       }
       return tClass;
    }
-
    AsOcupado() {
       return (this._asientoOcu > 0);
    }
-
    onclick() {
       localStorage.setItem(this._numAs, 1);
       if (this._asientoOcu) {
