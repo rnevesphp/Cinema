@@ -4,34 +4,29 @@ class cls04Sesiones_ {
       this.celdaSesion;
       this.containerSesiones = document.getElementById("grid_sala");
       this.createCeldaSesion();
-      this.pintarSesion();
+      this.pintarSesiones();
    }
-
    createCeldaSesion() {
       this.celdaSesion = document.createElement("div");
       this.celdaSesion.className = "celdaSesion";
       this.celdaSesion.innerHTML = "Sesion " + this.numDeSesion;
       this.celdaSesion.addEventListener("click", this.onclick.bind(this));
    }
-
-   pintarSesion() {
+   pintarSesiones() {
       this.containerSesiones.appendChild(this.celdaSesion);
    }
-
    onclick() {
-      this.pintarSesion();
-      this.borrarSesion();
-      this.creatingSala();
+      this.pintarSesiones();
+      this.borrarSesiones();
+      this.createCineFilial();
    }
-   creatingSala() {
-      this.salas = new cls05CineFilial_();
-   }
-
-   createSalas() {
-      this.salas.createSalas();
-   }
-
-   borrarSesion() {
+   borrarSesiones() {
       this.containerSesiones.innerHTML = "";
+   }
+   createCineFilial() {
+      this.addSalas = new cls05CineFilial_();
+   }
+   createSalas() {
+      this.addSalas.createSalas();
    }
 }
