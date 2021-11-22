@@ -4,9 +4,9 @@ class cls06SalaCine_ {
       this.numAsientosSala = numAsientosSala;
       this.Seats = [];
       this.containerHTML = document.getElementById("grid_sala");
+      this.celdaSala;
       this.CreateAsientos();
       this.CreateCeldaSala();
-      this.celdaSala;
    }
    CreateAsientos() {
       for (var i = 0; i < this.numAsientosSala; i++) {
