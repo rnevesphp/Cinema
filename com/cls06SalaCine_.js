@@ -25,10 +25,10 @@ class cls06SalaCine_ {
       this.containerHTML.appendChild(this.celdaSala);
    }
    onclick() {
-      this.EraseAsientos();
+      this.borrarSalas();
       this.drawAsientos();
    }
-   EraseAsientos() {
+   borrarSalas() {
       this.containerHTML.innerHTML = "";
    }
    drawAsientos() {
